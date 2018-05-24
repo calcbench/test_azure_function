@@ -1,3 +1,5 @@
-import sys, os.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), 'mcorp/Lib/site-packages')))
-print(sys.path)
+import os
+import platform
+
+message = "Using Python '{0}'".format(platform.python_version())
+print(message)
